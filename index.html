@@ -1,0 +1,230 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Portafolio - Damian Maturana Contrera</title> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" 
+        rel="stylesheet" 
+    > 
+
+    <!-- Vinculación del archivo CSS principal -->
+    <link rel="stylesheet" href="style.css"> 
+</head> 
+
+<body> 
+
+    <main class="pagina"> 
+
+        <!-- PANTALLA 1: Presentación (Centrada) -->
+        <section id="pantalla-1" class="pantalla activa"> 
+            
+            <div class="contenedor-pantalla-1">
+                <div class="presentacion"> 
+                    <h1>¿Quien soy?</h1> 
+                    <h2>Damian Maturana Contrera</h2> 
+                    <p class="estudios"> 
+                        Estudiante de diseño 4to año<br> 
+                        en la PUCV 
+                    </p> 
+                </div> 
+
+                <div class="contenedor-botones">
+                    <button class="btn-navegacion" onclick="cambiarPantalla('pantalla-2')">
+                        Experiencia
+                    </button>
+                </div>
+            </div>
+
+        </section> 
+
+        <!-- PANTALLA 2: Experiencia y Habilidades -->
+        <section id="pantalla-2" class="pantalla"> 
+
+            <section class="seccion experiencia"> 
+                <div class="titulo-seccion"> 
+                    Experiencia 
+                </div> 
+                <p class="descripcion"> 
+                    He pasado principalmente por cursos de diseño gráfico y de ediciones 
+                    tanto digitales como físicas, la primera me da la posibilidad de entender 
+                    cierto porcentaje de contenido de código y estilos. 
+                </p> 
+            </section> 
+
+            <section class="seccion habilidades"> 
+                <div class="titulo-seccion"> 
+                    Habilidades 
+                </div> 
+                <ul> 
+                    <li>Ilustración</li> 
+                    <li>Control espacial</li> 
+                    <li>Uso de las colorimetrías</li> 
+                    <li>Creación y selección tipográfica.</li> 
+                    <li>Codificación básica</li> 
+                    <li>Experimentación e innovación</li> 
+                </ul> 
+            </section> 
+
+            <div class="contenedor-botones">
+                <button class="btn-navegacion btn-secundario" onclick="cambiarPantalla('pantalla-1')">
+                    Volver
+                </button>
+                <button class="btn-navegacion" onclick="cambiarPantalla('pantalla-3')">
+                    Siguiente
+                </button>
+            </div>
+
+        </section> 
+
+        <!-- PANTALLA 3: Fuertes y Gustos -->
+        <section id="pantalla-3" class="pantalla"> 
+
+            <section class="seccion fuertes"> 
+                <div class="titulo-seccion"> 
+                    Fuertes 
+                </div> 
+                <ul> 
+                    <li>Interés</li> 
+                    <li>Dinamismo</li> 
+                    <li>Determinación</li> 
+                    <li>Trabajo en equipo</li> 
+                    <li>Nivel de abstracción</li> 
+                    <li>Trabajos previos con equipos</li> 
+                </ul> 
+            </section> 
+
+            <section class="seccion gustos"> 
+                <div class="titulo-seccion"> 
+                    Gustos 
+                </div> 
+                <ul> 
+                    <li>Busqueda de novedades</li> 
+                    <li>Estudio constante</li> 
+                    <li>Ilustración</li> 
+                    <li>Diseñar</li> 
+                    <li>música</li> 
+                </ul> 
+            </section> 
+
+            <div class="contenedor-botones">
+                <button class="btn-navegacion btn-secundario" onclick="cambiarPantalla('pantalla-2')">
+                    Volver
+                </button>
+                <button class="btn-navegacion" onclick="cambiarPantalla('pantalla-4')">
+                    Repositorio
+                </button>
+            </div>
+
+        </section> 
+
+        <!-- PANTALLA 4: Repositorio de Imágenes -->
+        <section id="pantalla-4" class="pantalla"> 
+
+            <!-- Cabecera de la Pantalla 4 -->
+            <div class="cabecera-pantalla-4">
+                <button class="btn-navegacion btn-secundario" onclick="cambiarPantalla('pantalla-3')">
+                    Volver
+                </button>
+                <a href="https://wiki.ead.pucv.cl/Damian_Maturana" target="_blank" rel="noopener noreferrer" class="btn-navegacion btn-enlace">
+                    Wiki Casiopea
+                </a>
+            </div>
+
+            <div class="repositorio-contenido">
+                
+                <!-- Carrusel infinito continuo con contenedor rectangular rosa -->
+                <div class="contenedor-carrusel">
+                    <div class="pista-carrusel">
+                        <!-- Las 3 cajas principales -->
+                       <div class="caja-imagen">
+    <a href="https://www.instagram.com/elmercadillovalpo/" target="_blank" rel="noopener noreferrer">
+        <img src="imagenes/mercadillo.png" alt="Imagen 1">
+    </a>
+</div>
+                        <div class="caja-imagen">
+                            <img src="imagenes/bitacoratravesia1reed.png" alt="Imagen 2">
+                        </div>
+                        <div class="caja-imagen">
+    <a href="https://www.instagram.com/damna._.art/" target="_blank" rel="noopener noreferrer">
+        <img src="imagenes/damnaart.png" alt="Imagen 3">
+    </a>
+</div>
+
+                        <!-- Duplicado idéntico para el bucle continuo -->
+                       <div class="caja-imagen">
+    <a href="https://www.instagram.com/elmercadillovalpo/" target="_blank" rel="noopener noreferrer">
+        <img src="imagenes/mercadillo.png" alt="Imagen 1">
+    </a>
+</div>
+                        <div class="caja-imagen">
+                            <img src="imagenes/bitacoratravesia1reed.png" alt="Imagen 2 duplicada">
+                        </div>
+                      <div class="caja-imagen">
+    <a href="https://www.instagram.com/damna._.art/" target="_blank" rel="noopener noreferrer">
+        <img src="imagenes/damnaart.png" alt="Imagen 3">
+    </a>
+</div>
+                    </div>
+                </div>
+
+                <!-- Bloque V2 -->
+                <div class="titulo-seccion">
+                    Experiencia editorial 
+                </div>
+                <div class="grid-imagenes grid-3 experiencia-editorial">
+                    <div class="caja-imagen">
+                        <a href="https://wiki.ead.pucv.cl/Entrega_U1_TOE_2025_%E2%80%93_Damian_Maturana" target="_blank" rel="noopener noreferrer">
+                            <img src="imagenes/pcdmcdoed.png" alt="Imagen 1">
+                        </a>
+                    </div>
+                    <div class="caja-imagen">
+                        <img src="imagenes/summumreed.png" alt="Imagen 2">
+                    </div>
+                    <div class="caja-imagen">
+                        <a href="https://wiki.ead.pucv.cl/Entrega_U2_TOE_2025_%E2%80%93_Damian_Maturana" target="_blank" rel="noopener noreferrer">
+                            <img src="imagenes/Esquema_1_Proyecto_U2_TOE_DMC.png" alt="Imagen 3">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bloque Experiencias tipográficas -->
+                <div class="titulo-seccion">
+                    Experiencias tipográficas
+                </div>
+                <div class="grid-imagenes grid-2">
+                    <div class="caja-imagen">
+                        <a href="https://wiki.ead.pucv.cl/Fragile_%E2%80%93_Damian_Maturana" target="_blank" rel="noopener noreferrer">
+                            <img src="imagenes/tipografiav1.png" alt="Experiencia tipográfica 1">
+                        </a>
+                    </div>
+                    <div class="caja-imagen">
+                        <a href="https://wiki.ead.pucv.cl/Tipograf%C3%ADa_Summum_grotesk" target="_blank" rel="noopener noreferrer">
+                            <img src="imagenes/tipografiav2.png" alt="Experiencia tipográfica 2">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section> 
+
+    </main> 
+
+    <script>
+        function cambiarPantalla(idPantalla) {
+            document.querySelectorAll('.pantalla').forEach(p => p.classList.remove('activa'));
+            document.getElementById(idPantalla).classList.add('activa');
+        }
+    </script>
+
+</body> 
+
+</html>
